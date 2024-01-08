@@ -4,7 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <!-- Primary Meta Tags -->
     <title>Cheche Cakes Web Order</title>
+    <meta name="title" content="Cheche Cakes Web Order" />
+    <meta name="description"
+        content="Kini pemesanan donat di Cheche Cakes lebih mudah dengan Web Order. Kamu tinggal pilih topping dan masukkan data pemesanan saja." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ccwo.vercel.app/" />
+    <meta property="og:title" content="Cheche Cakes Web Order" />
+    <meta property="og:description"
+        content="Kini pemesanan donat di Cheche Cakes lebih mudah dengan Web Order. Kamu tinggal pilih topping dan masukkan data pemesanan saja." />
+
+    <!-- Twitter -->
+    <meta property="twitter:url" content="https://ccwo.vercel.app/" />
+    <meta property="twitter:title" content="Cheche Cakes Web Order" />
+    <meta property="twitter:description"
+        content="Kini pemesanan donat di Cheche Cakes lebih mudah dengan Web Order. Kamu tinggal pilih topping dan masukkan data pemesanan saja." />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+
+    <title>Cheche Cakes Web Order</title>
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="forms.css">
 </head>
@@ -120,34 +143,34 @@
                 </div>
             </div>
 
-            </div>
-
-            <div class="section-pemesan">
-                <div class="header-section">
-                    <div class="header-title">DATA PEMESAN</div>
-                    <div class="lines"></div>
-                </div>
-                <!-- Form for Pemesan -->
-                <form id="form">
-                    <div class="input-box">
-                        <label class="input-label">Nama</label>
-                        <input type="text" class="input-1" id="nama" onfocus="setFocus(true)" onblur="setFocus(false)" />
-                    </div>
-
-                    <div class="input-box active">
-                        <label class="input-label">No. Whatsapp</label>
-                        <input type="tel" class="input-1" value="+62" id="nomorwa" onfocus="setFocus(true)" onblur="setFocus(false)" />
-                    </div>
-
-                    <div class="input-box">
-                        <label class="input-label">Alamat Pengiriman</label>
-                        <input type="text" class="input-1" id="alamat" onfocus="setFocus(true)"
-                            onblur="setFocus(false)"/>
-                    </div>
-                </form>
-            </div>
-
         </div>
+
+        <div class="section-pemesan">
+            <div class="header-section">
+                <div class="header-title">DATA PEMESAN</div>
+                <div class="lines"></div>
+            </div>
+            <!-- Form for Pemesan -->
+            <form id="form">
+                <div class="input-box">
+                    <label for="nama" class="input-label">Nama</label>
+                    <input type="text" class="input-1" id="nama" onfocus="setFocus(true)" onblur="setFocus(false)" />
+                </div>
+
+                <div class="input-box active">
+                    <label for="nomorwa" class="input-label">No. Whatsapp</label>
+                    <input type="tel" class="input-1" value="+62" id="nomorwa" onfocus="setFocus(true)"
+                        onblur="setFocus(false)" />
+                </div>
+
+                <div class="input-box">
+                    <label for="alamat" class="input-label">Alamat Pengiriman</label>
+                    <input type="text" class="input-1" id="alamat" onfocus="setFocus(true)" onblur="setFocus(false)" />
+                </div>
+            </form>
+        </div>
+
+    </div>
     </div>
     <div class="cta">
         <div class="group">
@@ -165,6 +188,15 @@
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="newscript.js"></script>
     <script src="forms.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Check if JavaScript is enabled
+            if (typeof window !== 'undefined') {
+                // Display an alert or insert a message into the DOM
+                alert("Harap aktifkan JavaScript di browser Anda situs ini dapat berjalan.");
+            }
+        });
+    </script>
 </body>
 
 </html>
