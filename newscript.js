@@ -179,9 +179,9 @@ $(document).ready(function () {
   function updateWhatsAppButtonState() {
     const selectedToppingsData = getSelectedToppingsData();
     const whatsappButton = $(".send-whatsapp-button");
-    const nama = $("#form input[type='text']").val();
-    const whatsapp = $("#form input[type='tel']").val();
-    const alamat = $("#form input[type='text']").val();
+    const nama = $("#form #nama").val();
+    const whatsapp = $("#form #nomorwa").val();
+    const alamat = $("#form #alamat").val();
     const isFormNotEmpty =
       nama.trim() !== "" && whatsapp.trim() !== "" && alamat.trim() !== "";
     whatsappButton.prop(
@@ -229,9 +229,9 @@ $(document).ready(function () {
 
   function sendWhatsAppMessage() {
     const selectedToppingsData = getSelectedToppingsData();
-    const nama = $("#form input[type='text']").val();
-    const whatsapp = $("#form input[type='tel']").val();
-    const alamat = $("#form input[type='text']").val();
+    const nama = $("#form #nama").val();
+    const whatsapp = $("#form #nomorwa").val();
+    const alamat = $("#form #alamat").val();
     const messageText = selectedToppingsData
       .map((topping) => `- ${topping.menuName} x ${topping.toppingCount}pcs`)
       .join("\n");
