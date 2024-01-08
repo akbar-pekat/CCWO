@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Cheche Cakes Web Order</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="forms.css">
 </head>
 
 <body>
@@ -119,13 +120,39 @@
                 </div>
             </div>
 
-        </div>
+            </div>
 
+            <div class="section-pemesan">
+                <div class="header-section">
+                    <div class="header-title">DATA PEMESAN</div>
+                    <div class="lines"></div>
+                </div>
+                <!-- Form for Pemesan -->
+                <form id="form">
+                    <div class="input-box">
+                        <label class="input-label">Nama</label>
+                        <input type="text" class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)" />
+                    </div>
+
+                    <div class="input-box active">
+                        <label class="input-label">No. Whatsapp</label>
+                        <input type="tel" class="input-1" value="+62" onfocus="setFocus(true)" onblur="setFocus(false)" />
+                    </div>
+
+                    <div class="input-box">
+                        <label class="input-label">Alamat Pengiriman</label>
+                        <input type="text" class="input-1" onfocus="setFocus(true)"
+                            onblur="setFocus(false)"/>
+                    </div>
+                </form>
+            </div>
+
+        </div>
     </div>
     <div class="cta">
         <div class="group">
             <div class="text">
-                <label for="pricing">Total Harga</label>
+                <div class="label">Total Harga</div>
                 <div id="pricing" class="total-pricing">Rp30.000</div>
             </div>
             <button class="button send-whatsapp-button" disabled>
@@ -133,9 +160,11 @@
             </button>
         </div>
     </div>
+    <br><br><br>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="new.js"></script>
+    <script src="newscript.js"></script>
+    <script src="forms.js"></script>
 </body>
 
 </html>
