@@ -235,7 +235,7 @@ $(document).ready(function () {
     const messageText = selectedToppingsData
       .map((topping) => `- ${topping.menuName} x ${topping.toppingCount}pcs`)
       .join("\n");
-    const fullMessageText = `Halo, saya ingin memesan Donat dengan Topping:\n${messageText}\n\n----------\n\nNama: *${nama}*\nNo. Whatsapp: *${whatsapp}*\nAlamat Pengiriman: *${alamat}*\n\n----------\n\nOrder via CCWO`;
+    const fullMessageText = `Halo, saya ingin memesan Donat dengan Topping:\n${messageText}\n\n----------\n\nNama: ${nama}\nNo. Whatsapp: ${whatsapp}\nAlamat Pengiriman: ${alamat}\n\n----------\n\nOrder via CCWO`;
     const whatsappLink = `https://api.whatsapp.com/send?phone=+6281906955567&text=${encodeURIComponent(
       fullMessageText
     )}`;
