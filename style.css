@@ -1,0 +1,358 @@
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+
+* {
+  font-family: "Satoshi", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header,
+.header * {
+  box-sizing: border-box;
+}
+.header {
+  background: #ffffff;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+.icons-40-back {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  overflow: visible;
+}
+.donat-kentang {
+  color: #031222;
+  text-align: left;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+/* Header */
+
+/* Section Box */
+.section-box,
+.section-box *,
+.section-topping,
+.section-topping * {
+  box-sizing: border-box;
+}
+
+.section-box,
+.section-topping {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  position: relative;
+}
+.header-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  user-select: none;
+}
+.header-title {
+  color: var(--function-font, #031222);
+  text-align: left;
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.lines {
+  background: #003bd1;
+  border-radius: 3px;
+  flex-shrink: 0;
+  width: 40px;
+  height: 3px;
+  position: relative;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.title {
+  color: var(--function-font, #031222);
+  text-align: left;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  position: relative;
+}
+.desc {
+  color: #50565c;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 500;
+  position: relative;
+}
+.action-item {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.display-number {
+  border-radius: 4px;
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  user-select: none;
+}
+
+.number {
+  color: var(--function-font, #031222);
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  position: relative;
+  width: 20px;
+}
+.plus-button,
+.minus-button {
+  border-radius: 4px;
+  border: 1px solid #e7eaed;
+  background-color: #ffffff;
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.plus-button:hover,
+.minus-button:hover {
+  background-color: #003bd1;
+}
+
+.plus-button:hover svg path,
+.minus-button:hover svg path {
+  stroke: #ffffff;
+}
+
+.plus-button:disabled,
+.minus-button:disabled {
+  cursor: not-allowed;
+  background-color: #f5f5f5;
+  stroke: #99a3b1;
+}
+
+.plus-button:disabled svg path,
+.minus-button:disabled svg path {
+  stroke: #99a3b1;
+}
+
+.note {
+  background: rgba(0, 59, 209, 0.15);
+  border-radius: 4px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.text {
+  color: #003bd1;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-shrink: 0;
+  position: relative;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  position: relative;
+}
+.image {
+  border-radius: 15px;
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  position: relative;
+  overflow: hidden;
+}
+.image img {
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.topping {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.topping-name {
+  color: var(--function-font, #031222);
+  text-align: left;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  position: relative;
+}
+.price {
+  color: #50565c;
+  text-align: left;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  position: relative;
+}
+
+.cta {
+  background: #ffffff;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  box-shadow: 0px 4px 20px 0px rgba(80, 86, 92, 0.15);
+}
+
+.cta .group {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 200px;
+  padding: 16px;
+}
+/* .text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.total-topping {
+  color: var(--function-font, #031222);
+  text-align: left;
+  font-family: var(
+    --bodytext-14-px-reg-font-family,
+    "NunitoSans-Regular",
+    sans-serif
+  );
+  font-size: var(--bodytext-14-px-reg-font-size, 14px);
+  line-height: var(--bodytext-14-px-reg-line-height, 20px);
+  font-weight: var(--bodytext-14-px-reg-font-weight, 400);
+  position: relative;
+}
+.pricing {
+  color: var(--function-font, #031222);
+  text-align: left;
+  font-family: var(
+    --subtitle-sub-116-px-bold-font-family,
+    "NunitoSans-Bold",
+    sans-serif
+  );
+  font-size: var(--subtitle-sub-116-px-bold-font-size, 16px);
+  line-height: var(--subtitle-sub-116-px-bold-line-height, 24px);
+  font-weight: var(--subtitle-sub-116-px-bold-font-weight, 700);
+  position: relative;
+} */
+.button {
+  background: #003bd1;
+  border-radius: 12px;
+  border: none;
+  padding: 14px 12px 14px 12px;
+  min-width: 164px;
+  overflow: hidden;
+  cursor: pointer;
+
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  background-color: #f5f5f5;
+  stroke: #99a3b1;
+  color: #99a3b1;
+}
