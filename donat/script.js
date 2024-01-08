@@ -128,6 +128,9 @@ $(document).ready(function () {
 
     // Log the selected toppings data
     console.log(selectedToppingsData);
+
+    const totalPrice = calculateTotalPrice();
+    console.log(`Total Price: IDR ${totalPrice}`);
   });
 
   $(".decrement-topping").on("click", function () {
@@ -146,6 +149,9 @@ $(document).ready(function () {
 
     // Log the selected toppings data
     console.log(selectedToppingsData);
+
+    const totalPrice = calculateTotalPrice();
+    console.log(`Total Price: IDR ${totalPrice}`);
   });
 
   //   $(".menu").each(function () {
@@ -191,9 +197,38 @@ $(document).ready(function () {
 
   $(".increment-topping, .decrement-topping").on("click", function () {
     updateWhatsAppButtonState();
+    updateTotalPricing();
   });
 
+  function updateTotalPricing() {
+    const totalPrice = calculateTotalPrice();
+    const formattedPrice = formatCurrency(totalPrice); // Add a function to format the currency as needed
+
+    $("#pricing").text(formattedPrice);
+  }
+
+  // Function to format currency as needed
+  function formatCurrency(amount) {
+    // Implement your currency formatting logic here
+    // For simplicity, let's assume amount is in Indonesian Rupiah (IDR)
+    return `Rp${amount.toLocaleString()}`;
+  }
+
+  function calculateTotalPrice() {
+    const selectedToppingsData = getSelectedToppingsData();
+    const toppingPrice = 5000; // Assuming each topping costs IDR 5,000
+    let totalPrice = 0;
+
+    // Calculate the total price based on the count of each selected topping
+    selectedToppingsData.forEach((topping) => {
+      totalPrice += topping.toppingCount * toppingPrice;
+    });
+
+    return totalPrice;
+  }
+
   updateWhatsAppButtonState();
+  updateTotalPricing(); 
 
   function sendWhatsAppMessage() {
     const selectedToppingsData = getSelectedToppingsData();

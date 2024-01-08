@@ -21,29 +21,15 @@
   padding: 8px;
   display: flex;
   flex-direction: row;
-  gap: 8px;
   align-items: center;
-  justify-content: flex-start;
-  position: relative;
-  overflow: hidden;
+  justify-content: center;
 }
-.icons-40-back {
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  position: relative;
-  overflow: visible;
-}
-.donat-kentang {
+.header .header-title {
   color: #031222;
   text-align: left;
   font-size: 18px;
   line-height: 28px;
-  font-weight: 700;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  font-weight: 800;
 }
 /* Header */
 
@@ -299,7 +285,8 @@
   gap: 200px;
   padding: 16px;
 }
-/* .text {
+
+.text {
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -308,32 +295,22 @@
   flex-shrink: 0;
   position: relative;
 }
-.total-topping {
-  color: var(--function-font, #031222);
+
+.text label {
+  color: #031222;
   text-align: left;
-  font-family: var(
-    --bodytext-14-px-reg-font-family,
-    "NunitoSans-Regular",
-    sans-serif
-  );
-  font-size: var(--bodytext-14-px-reg-font-size, 14px);
-  line-height: var(--bodytext-14-px-reg-line-height, 20px);
-  font-weight: var(--bodytext-14-px-reg-font-weight, 400);
-  position: relative;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400px;
 }
-.pricing {
-  color: var(--function-font, #031222);
-  text-align: left;
-  font-family: var(
-    --subtitle-sub-116-px-bold-font-family,
-    "NunitoSans-Bold",
-    sans-serif
-  );
-  font-size: var(--subtitle-sub-116-px-bold-font-size, 16px);
-  line-height: var(--subtitle-sub-116-px-bold-line-height, 24px);
-  font-weight: var(--subtitle-sub-116-px-bold-font-weight, 700);
-  position: relative;
-} */
+
+.total-pricing {
+  color: #031222;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
 .button {
   background: #003bd1;
   border-radius: 12px;
