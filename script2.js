@@ -200,7 +200,7 @@ $(document).ready(function () {
     const messageText = selectedToppingsData
       .map((topping) => `${topping.menuName} x ${topping.toppingCount}pcs`)
       .join("\n");
-    const whatsappLink = `https://web.whatsapp.com/send?phone=+6281906955567&text=${encodeURIComponent(
+    const whatsappLink = `https://api.whatsapp.com/send?phone=+6281906955567&text=${encodeURIComponent(
       messageText
     )}`;
     window.open(whatsappLink, "_blank");
